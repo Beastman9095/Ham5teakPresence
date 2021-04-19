@@ -11,7 +11,8 @@ Ham5teak IP Address : play.ham5teak.xyz
 - [x] Basic understanding of Discord.Net Discord RPC.
 
 **To Be Added** :
-- [x] Customizable interface alongside the Ham5teak one.
+- [x] General bug fixes.
+- [ ] Customizable interface alongside the Ham5teak one.
 
 > Copyright © 2021 Ham5teak 
 
