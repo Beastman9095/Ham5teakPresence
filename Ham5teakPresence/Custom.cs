@@ -72,10 +72,16 @@ namespace Ham5teakPresence
             if (enabled != false)
             {
                 string message1 = "Presence is already applied.";
-                string title1 = "Ham5teak Presence";
+                string title1 = "Custom Presence";
+                MessageBox.Show(message1, title1);
+            }else if (String.IsNullOrEmpty(appid))
+            {
+
+                string message1 = "Application ID must be entered.";
+                string title1 = "Custom Presence";
                 MessageBox.Show(message1, title1);
             }
-            else
+            else if (!String.IsNullOrEmpty(b2u) && !String.IsNullOrEmpty(b1u))
             {
                 enabled = true;
                 inita = true;
@@ -96,6 +102,78 @@ namespace Ham5teakPresence
                     {
                     new DiscordRPC.Button() { Label = b1t, Url = b1u },
                     new DiscordRPC.Button() { Label = b2t, Url = b2u }
+                    }
+                });
+                string message = "Presence has been applied.";
+                string title = "Custom Presence";
+                MessageBox.Show(message, title);
+            }else if (String.IsNullOrEmpty(b2u) && String.IsNullOrEmpty(b1u))
+            {
+                enabled = true;
+                inita = true;
+                Client = new DiscordRpcClient(appid);
+                Client.Initialize();
+                Client.SetPresence(new RichPresence()
+                {
+                    Details = details,
+                    State = status,
+                    Assets = new Assets()
+                    {
+                        LargeImageKey = lik,
+                        LargeImageText = lit,
+                        SmallImageKey = sik,
+                        SmallImageText = sit
+                    }
+                });
+                string message = "Presence has been applied.";
+                string title = "Custom Presence";
+                MessageBox.Show(message, title);
+            }else if (!String.IsNullOrEmpty(b2u) && String.IsNullOrEmpty(b1u))
+            {
+                enabled = true;
+                inita = true;
+                Client = new DiscordRpcClient(appid);
+                Client.Initialize();
+                Client.SetPresence(new RichPresence()
+                {
+                    Details = details,
+                    State = status,
+                    Assets = new Assets()
+                    {
+                        LargeImageKey = lik,
+                        LargeImageText = lit,
+                        SmallImageKey = sik,
+                        SmallImageText = sit
+                    },
+                    Buttons = new DiscordRPC.Button[]
+                    {
+                    new DiscordRPC.Button() { Label = b2t, Url = b2u }
+                    }
+                });
+                string message = "Presence has been applied.";
+                string title = "Custom Presence";
+                MessageBox.Show(message, title);
+            }
+            else if (String.IsNullOrEmpty(b2u) && !String.IsNullOrEmpty(b1u))
+            {
+                enabled = true;
+                inita = true;
+                Client = new DiscordRpcClient(appid);
+                Client.Initialize();
+                Client.SetPresence(new RichPresence()
+                {
+                    Details = details,
+                    State = status,
+                    Assets = new Assets()
+                    {
+                        LargeImageKey = lik,
+                        LargeImageText = lit,
+                        SmallImageKey = sik,
+                        SmallImageText = sit
+                    },
+                    Buttons = new DiscordRPC.Button[]
+                    {
+                    new DiscordRPC.Button() { Label = b1t, Url = b1u }
                     }
                 });
                 string message = "Presence has been applied.";
@@ -132,6 +210,11 @@ namespace Ham5teakPresence
         private void Custom_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Beastman9095/Ham5teakPresence/blob/custompresencebeta/README.md#steps");
         }
     }
 }
