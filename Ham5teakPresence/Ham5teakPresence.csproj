@@ -101,7 +101,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\Ham5teakPresence.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -117,8 +119,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\DiscordRPC.dll" />
+    <None Include="bin\Debug\DiscordRPC.pdb" />
+    <None Include="bin\Debug\DiscordRPC.xml" />
+    <None Include="bin\Debug\Ham5teakPresence.pdb" />
+    <None Include="bin\Debug\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\Newtonsoft.Json.xml" />
     <Content Include="icon.ico" />
     <Content Include="Screenshot 2021-04-19 144343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
