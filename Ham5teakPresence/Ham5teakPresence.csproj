@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -95,14 +97,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="bin\Debug\Ham5teakPresence.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -120,7 +116,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\DiscordRPC.dll" />
-    <None Include="bin\Debug\DiscordRPC.pdb" />
     <None Include="bin\Debug\DiscordRPC.xml" />
     <None Include="bin\Debug\Ham5teakPresence.pdb" />
     <None Include="bin\Debug\Newtonsoft.Json.dll" />
