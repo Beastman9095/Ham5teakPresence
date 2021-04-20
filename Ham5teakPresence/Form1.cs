@@ -24,6 +24,15 @@ namespace Ham5teakPresence
                 string title1 = "Ham5teak Presence";
                 MessageBox.Show(message1, title1);
             }
+            var form = Application.OpenForms["Custom"];
+            if (form != null)
+            {
+                form = new Custom();
+                string message = "Please close the Custom Presence application first.";
+                string title = "Ham5teak Presence";
+                MessageBox.Show(message, title);
+                return;
+            }
             else
             {
                 enabled = true;
