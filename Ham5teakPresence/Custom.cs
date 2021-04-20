@@ -16,13 +16,10 @@ namespace Ham5teakPresence
 
         public DiscordRpcClient Client { get; private set; }
 
-        private void Custom_FormClosed(object sender, EventArgs e)
-        {
-
-        }
-
         private void Custom_Load(object sender, EventArgs e)
         {
+
+            // loads the last form entries from settings, will apply default if none has been applied yet
 
             textBox1.Text = Properties.Settings.Default.appid;
             detailsbox.Text = Properties.Settings.Default.details;
@@ -68,6 +65,10 @@ namespace Ham5teakPresence
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            // Defining boxes
+
+
             string appid;
             appid = textBox1.Text;
             string details;
@@ -91,6 +92,8 @@ namespace Ham5teakPresence
             string b2u;
             b2u = button2url.Text;
 
+
+            // Checks and applying of presence
 
             if (enabled != false)
             {
@@ -207,6 +210,11 @@ namespace Ham5teakPresence
                 MessageBox.Show(message, title);
             }
 
+            // Form events in general
+
+
+            // Saves the entries to settings
+
             Properties.Settings.Default.appid = textBox1.Text;
             Properties.Settings.Default.details = detailsbox.Text;
             Properties.Settings.Default.status = statusbox.Text;
@@ -220,6 +228,9 @@ namespace Ham5teakPresence
             Properties.Settings.Default.b2t = button2text.Text;
             Properties.Settings.Default.Save();
             Properties.Settings.Default.Reload();
+
+            // disables close button as long as the presence is running
+            this.ControlBox = false; 
         }
 
         private void detailsbox_TextChanged(object sender, EventArgs e)
@@ -234,6 +245,7 @@ namespace Ham5teakPresence
             {
                 enabled = false;
                 Client.Dispose();
+                this.ControlBox = true; // re-enables close button
                 inita = false;
                 string message2 = "Presence has been removed.";
                 string title2 = "Custom Presence";
