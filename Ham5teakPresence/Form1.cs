@@ -18,16 +18,14 @@ namespace Ham5teakPresence
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var customform = Application.OpenForms["Custom"];
             if (enabled != false)
             {
                 string message1 = "Presence is already applied.";
                 string title1 = "Ham5teak Presence";
                 MessageBox.Show(message1, title1);
-            }
-            var form = Application.OpenForms["Custom"];
-            if (form != null)
+            }else if (customform != null)
             {
-                form = new Custom();
                 string message = "Please close the Custom Presence application first.";
                 string title = "Ham5teak Presence";
                 MessageBox.Show(message, title);
