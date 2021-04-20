@@ -36,6 +36,9 @@ Green colored arrow in the image below shows the application name which is alway
 
 ![discordimage2](https://i.ibb.co/42fT2G9/Screenshot-2021-04-20-132530.png)
 
+**Detailed Information:**
+> Check https://github.com/Beastman9095/Ham5teakPresence/wiki/Guide-To-Discord-Rich-Presences for detailed information on this topic.
+
 
 # Project Information
 **What is Achieved**:
