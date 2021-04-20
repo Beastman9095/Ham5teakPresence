@@ -8,9 +8,27 @@ This application has been designed for Ham5teak players/staff and to show a way 
 > 
 > (**Ham5teak IP Address**) : play.ham5teak.xyz
 
+
 **How it should look:**
 
 ![discordimage](https://i.ibb.co/qgpLL7z/Screenshot-2021-04-19-144343.png)
+
+# Steps
+
+**1:**
+Create an application from https://discord.com/developers/applications.
+**2:**
+Copy the Application/Client ID
+**3:**
+Go in the Rich Presence Tab, Art Assets.
+**4:**
+Upload the image of your choice for LargeImage and another for your SmallImage - both are optional.
+**5:**
+Rename the images and use the renamed version names as image keys.
+
+
+![discordimage2](https://i.ibb.co/42fT2G9/Screenshot-2021-04-20-132530.png)
+
 
 # Project Information
 **What is Achieved**:
