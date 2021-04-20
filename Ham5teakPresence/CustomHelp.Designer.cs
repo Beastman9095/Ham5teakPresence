@@ -187,7 +187,7 @@ namespace Ham5teakPresence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 351);
+            this.ClientSize = new System.Drawing.Size(426, 331);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
@@ -202,11 +202,13 @@ namespace Ham5teakPresence
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.MaximumSize = new System.Drawing.Size(442, 390);
-            this.MinimumSize = new System.Drawing.Size(442, 390);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(442, 370);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(442, 370);
             this.Name = "CustomHelp";
             this.ShowIcon = false;
-            this.Text = "CustomHelp";
+            this.Text = "Custom Presence Help";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
