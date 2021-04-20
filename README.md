@@ -22,6 +22,14 @@ This application has been designed for Ham5teak players/staff and to show a way 
 - [x] ~~Customizable interface alongside the Ham5teak one.~~
 - [ ] Saving the last used custom presence for future uses.
 
+**General Summary Of Changes:**
+```diff
++ Bug fixes
++ Performance improvements
++ Ability to add custom presence
+- Unnecessary code
+```
+
 
 > Copyright © 2021 Ham5teak 
 
