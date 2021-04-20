@@ -135,5 +135,10 @@ namespace Ham5teakPresence
                 MessageBox.Show(message, title);
             }
         }
+
+        private void Custom_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

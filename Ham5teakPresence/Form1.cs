@@ -99,5 +99,24 @@ namespace Ham5teakPresence
             Custom helpBox = new Custom();
             helpBox.Show();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.com/developers/docs/rich-presence/how-to");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            var form = Application.OpenForms["Custom"];
+            if (form != null)
+            {
+                form = new Custom();
+                return;
+            }
+            Custom helpBox = new Custom();
+            helpBox.Show();
+
+        }
     }
 }

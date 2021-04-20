@@ -330,6 +330,7 @@ namespace Ham5teakPresence
             this.MinimumSize = new System.Drawing.Size(442, 359);
             this.Name = "Custom";
             this.Text = "Custom Presence";
+            this.Load += new System.EventHandler(this.Custom_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
