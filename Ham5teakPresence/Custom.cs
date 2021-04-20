@@ -218,6 +218,8 @@ namespace Ham5teakPresence
             Properties.Settings.Default.b1t = button1text.Text;
             Properties.Settings.Default.b2u = button2url.Text;
             Properties.Settings.Default.b2t = button2text.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Reload();
         }
 
         private void detailsbox_TextChanged(object sender, EventArgs e)
