@@ -45,13 +45,15 @@ Green colored arrow in the image below shows the application name which is alway
 **To Be Added**:
 - [x] ~~General bug fixes.~~
 - [x] ~~Customizable interface alongside the Ham5teak one.~~
-- [ ] Saving the last used custom presence for future uses.
+- [x] ~~Saving the last used custom presence for future uses.~~
 
 **General Summary Of Changes:**
 ```diff
-+ Bug fixes
++ Major bug fixes
 + Performance improvements
 + Ability to add custom presence
++ Auto saving of custom presence
++ Design fixes
 - Unnecessary code
 ```
 
