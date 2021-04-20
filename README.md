@@ -13,11 +13,11 @@ This application has been designed for Ham5teak players/staff and to show a way 
 ![discordimage](https://i.ibb.co/qgpLL7z/Screenshot-2021-04-19-144343.png)
 
 # Project Information
-**What is Achieved** :
+**What is Achieved**:
 - [x] A static discord presence.
 - [x] Basic understanding of Discord.Net Discord RPC.
 
-**To Be Added** :
+**To Be Added**:
 - [x] ~~General bug fixes.~~
 - [x] ~~Customizable interface alongside the Ham5teak one.~~
 - [ ] Saving the last used custom presence for future uses.
