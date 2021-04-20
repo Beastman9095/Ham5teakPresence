@@ -39,7 +39,7 @@ Green colored arrow in the image below shows the application name which is alway
 
 # Project Information
 **What is Achieved**:
-- [x] A static discord presence.
+- [x] An advanced discord presence application allowing customizations with a simple UI.
 - [x] Basic understanding of Discord.Net Discord RPC.
 
 **To Be Added**:
