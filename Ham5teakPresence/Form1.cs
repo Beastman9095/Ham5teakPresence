@@ -18,17 +18,25 @@ namespace Ham5teakPresence
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var customform = Application.OpenForms["Custom"];
             if (enabled != false)
             {
                 string message1 = "Presence is already applied.";
                 string title1 = "Ham5teak Presence";
                 MessageBox.Show(message1, title1);
             }
+            else if (customform != null)
+            {
+                string message = "Please close the Custom Presence application first.";
+                string title = "Ham5teak Presence";
+                MessageBox.Show(message, title);
+                return;
+            }
             else
             {
                 enabled = true;
                 inita = true;
-                Client = new DiscordRpcClient("833302091790417920"); 
+                Client = new DiscordRpcClient("833302091790417920");
                 Client.Initialize();
                 Client.SetPresence(new RichPresence()
                 {
@@ -80,6 +88,51 @@ namespace Ham5teakPresence
             }
             CMessageB helpBox = new CMessageB();
             helpBox.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.com/developers/docs/rich-presence/how-to");
+        }
+
+        private void custom_Click(object sender, EventArgs e)
+        {
+
+            var form = Application.OpenForms["Custom"];
+            if (form != null)
+            {
+                form = new Custom();
+                return;
+            }
+            Custom helpBox = new Custom();
+            helpBox.Show();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.com/developers/docs/rich-presence/how-to");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (inita == true)
+            {
+
+                string message = "Please remove your current presence first.";
+                string title = "Custom Presence";
+                MessageBox.Show(message, title);
+                return;
+
+            }
+            var form = Application.OpenForms["Custom"];
+            if (form != null)
+            {
+                form = new Custom();
+                return;
+            }
+            Custom helpBox = new Custom();
+            helpBox.Show();
+
         }
     }
 }

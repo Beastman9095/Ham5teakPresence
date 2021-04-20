@@ -61,6 +61,18 @@
     <Compile Include="CMessageB.Designer.cs">
       <DependentUpon>CMessageB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom.Designer.cs">
+      <DependentUpon>Custom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomHelp.Designer.cs">
+      <DependentUpon>CustomHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CMessageB.resx">
       <DependentUpon>CMessageB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom.resx">
+      <DependentUpon>Custom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomHelp.resx">
+      <DependentUpon>CustomHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -83,7 +101,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\Ham5teakPresence.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,8 +119,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\DiscordRPC.dll" />
+    <None Include="bin\Debug\DiscordRPC.pdb" />
+    <None Include="bin\Debug\DiscordRPC.xml" />
+    <None Include="bin\Debug\Ham5teakPresence.pdb" />
+    <None Include="bin\Debug\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\Newtonsoft.Json.xml" />
     <Content Include="icon.ico" />
     <Content Include="Screenshot 2021-04-19 144343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
