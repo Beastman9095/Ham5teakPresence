@@ -3,8 +3,10 @@
 This application has been designed for Ham5teak players/staff and to show a way of Discord.Net Discord RPC usage. 
 
 > My Discord: **Beastman#1937**
-(**Ham5teak Discord**) : https://discord.gg/6mn49CtPfP
-(**Ham5teak IP Address**) : play.ham5teak.xyz
+> 
+> (**Ham5teak Discord**) : https://discord.gg/6mn49CtPfP
+> 
+> (**Ham5teak IP Address**) : play.ham5teak.xyz
 
 **How it should look:**
 
