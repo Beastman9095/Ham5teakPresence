@@ -230,7 +230,7 @@ namespace Ham5teakPresence
             Properties.Settings.Default.Reload();
 
             // disables close button as long as the presence is running
-            this.ControlBox = false; 
+            this.ControlBox = false;
         }
 
         private void detailsbox_TextChanged(object sender, EventArgs e)
