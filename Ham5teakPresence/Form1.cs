@@ -107,8 +107,16 @@ namespace Ham5teakPresence
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (inita == true) 
+            {
 
-            var form = Application.OpenForms["Custom"];
+                string message = "Please remove your current presence first.";
+                string title = "Custom Presence";
+                MessageBox.Show(message, title);
+                return;
+
+            }
+                var form = Application.OpenForms["Custom"];
             if (form != null)
             {
                 form = new Custom();
