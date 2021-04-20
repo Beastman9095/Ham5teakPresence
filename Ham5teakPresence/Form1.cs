@@ -28,7 +28,7 @@ namespace Ham5teakPresence
             {
                 enabled = true;
                 inita = true;
-                Client = new DiscordRpcClient("833302091790417920"); 
+                Client = new DiscordRpcClient("833302091790417920");
                 Client.Initialize();
                 Client.SetPresence(new RichPresence()
                 {
@@ -107,7 +107,7 @@ namespace Ham5teakPresence
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (inita == true) 
+            if (inita == true)
             {
 
                 string message = "Please remove your current presence first.";
@@ -116,7 +116,7 @@ namespace Ham5teakPresence
                 return;
 
             }
-                var form = Application.OpenForms["Custom"];
+            var form = Application.OpenForms["Custom"];
             if (form != null)
             {
                 form = new Custom();
