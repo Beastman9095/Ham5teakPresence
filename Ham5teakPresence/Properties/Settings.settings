@@ -1,7 +1,39 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Ham5teakPresence.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="appid" Type="System.String" Scope="User">
+      <Value Profile="(Default)">833302091790417920</Value>
+    </Setting>
+    <Setting Name="details" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="status" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SG Cracked Minecraft Server</Value>
+    </Setting>
+    <Setting Name="lik" Type="System.String" Scope="User">
+      <Value Profile="(Default)">icon</Value>
+    </Setting>
+    <Setting Name="lit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ham5teak</Value>
+    </Setting>
+    <Setting Name="sik" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="sit" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="b1u" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://discord.gg/QNfQmHg</Value>
+    </Setting>
+    <Setting Name="b1t" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Join Discord</Value>
+    </Setting>
+    <Setting Name="b2u" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://shop.ham5teak.xyz/</Value>
+    </Setting>
+    <Setting Name="b2t" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Visit Shop</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

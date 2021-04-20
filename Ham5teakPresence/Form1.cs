@@ -24,7 +24,8 @@ namespace Ham5teakPresence
                 string message1 = "Presence is already applied.";
                 string title1 = "Ham5teak Presence";
                 MessageBox.Show(message1, title1);
-            }else if (customform != null)
+            }
+            else if (customform != null)
             {
                 string message = "Please close the Custom Presence application first.";
                 string title = "Ham5teak Presence";

@@ -16,6 +16,29 @@ namespace Ham5teakPresence
 
         public DiscordRpcClient Client { get; private set; }
 
+        private void Custom_FormClosed(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Custom_Load(object sender, EventArgs e)
+        {
+
+            textBox1.Text = Properties.Settings.Default.appid;
+            detailsbox.Text = Properties.Settings.Default.details;
+            statusbox.Text = Properties.Settings.Default.status;
+            largeimagetextbox.Text = Properties.Settings.Default.lit;
+            largeimagekeybox.Text = Properties.Settings.Default.lik;
+            smallimagetextbox.Text = Properties.Settings.Default.sit;
+            smallimagekeybox.Text = Properties.Settings.Default.sik;
+            button1url.Text = Properties.Settings.Default.b1u;
+            button1text.Text = Properties.Settings.Default.b1t;
+            button2url.Text = Properties.Settings.Default.b2u;
+            button2text.Text = Properties.Settings.Default.b2t;
+
+        }
+
+
         private void label6_Click(object sender, EventArgs e)
         {
 
@@ -74,7 +97,8 @@ namespace Ham5teakPresence
                 string message1 = "Presence is already applied.";
                 string title1 = "Custom Presence";
                 MessageBox.Show(message1, title1);
-            }else if (String.IsNullOrEmpty(appid))
+            }
+            else if (String.IsNullOrEmpty(appid))
             {
 
                 string message1 = "Application ID must be entered.";
@@ -107,7 +131,8 @@ namespace Ham5teakPresence
                 string message = "Presence has been applied.";
                 string title = "Custom Presence";
                 MessageBox.Show(message, title);
-            }else if (String.IsNullOrEmpty(b2u) && String.IsNullOrEmpty(b1u))
+            }
+            else if (String.IsNullOrEmpty(b2u) && String.IsNullOrEmpty(b1u))
             {
                 enabled = true;
                 inita = true;
@@ -128,7 +153,8 @@ namespace Ham5teakPresence
                 string message = "Presence has been applied.";
                 string title = "Custom Presence";
                 MessageBox.Show(message, title);
-            }else if (!String.IsNullOrEmpty(b2u) && String.IsNullOrEmpty(b1u))
+            }
+            else if (!String.IsNullOrEmpty(b2u) && String.IsNullOrEmpty(b1u))
             {
                 enabled = true;
                 inita = true;
@@ -180,6 +206,18 @@ namespace Ham5teakPresence
                 string title = "Custom Presence";
                 MessageBox.Show(message, title);
             }
+
+            Properties.Settings.Default.appid = textBox1.Text;
+            Properties.Settings.Default.details = detailsbox.Text;
+            Properties.Settings.Default.status = statusbox.Text;
+            Properties.Settings.Default.lit = largeimagetextbox.Text;
+            Properties.Settings.Default.lik = largeimagekeybox.Text;
+            Properties.Settings.Default.sit = smallimagetextbox.Text;
+            Properties.Settings.Default.sik = smallimagekeybox.Text;
+            Properties.Settings.Default.b1u = button1url.Text;
+            Properties.Settings.Default.b1t = button1text.Text;
+            Properties.Settings.Default.b2u = button2url.Text;
+            Properties.Settings.Default.b2t = button2text.Text;
         }
 
         private void detailsbox_TextChanged(object sender, EventArgs e)
@@ -205,11 +243,6 @@ namespace Ham5teakPresence
                 string title = "Custom Presence";
                 MessageBox.Show(message, title);
             }
-        }
-
-        private void Custom_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
