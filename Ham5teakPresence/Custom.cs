@@ -261,7 +261,7 @@ namespace Ham5teakPresence
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/Beastman9095/Ham5teakPresence/blob/custompresencebeta/README.md#steps");
+            System.Diagnostics.Process.Start("https://github.com/Beastman9095/Ham5teakPresence/wiki/Guide-To-Discord-Rich-Presences#steps");
         }
     }
 }
