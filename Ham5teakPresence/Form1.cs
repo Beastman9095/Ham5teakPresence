@@ -12,14 +12,13 @@ namespace Ham5teakPresence
         }
 
         bool inita = false;
-        bool enabled = false;
 
         public DiscordRpcClient Client { get; private set; }
 
         private void button1_Click(object sender, EventArgs e)
         {
             var customform = Application.OpenForms["Custom"];
-            if (enabled != false)
+            if (inita != false)
             {
                 string message1 = "Presence is already applied.";
                 string title1 = "Ham5teak Presence";
@@ -34,7 +33,6 @@ namespace Ham5teakPresence
             }
             else
             {
-                enabled = true;
                 inita = true;
                 Client = new DiscordRpcClient("833302091790417920");
                 Client.Initialize();
@@ -63,7 +61,6 @@ namespace Ham5teakPresence
         {
             if (inita == true)
             {
-                enabled = false;
                 Client.Dispose();
                 inita = false;
                 string message2 = "Presence has been removed.";
