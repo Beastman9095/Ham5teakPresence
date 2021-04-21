@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Ham5teakPresence")]
-[assembly: AssemblyDescription("Ham5teak Discord Presence")]
+[assembly: AssemblyDescription("Ham5teak Discord Presence by Beastman9095")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ham5teak")]
-[assembly: AssemblyProduct("Ham5teakPresence")]
+[assembly: AssemblyProduct("Ham5teak Discord Presence")]
 [assembly: AssemblyCopyright("Copyright © Ham5teak 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 // Minor Version
 // Build Number
 // Revision
-[assembly: AssemblyVersion("1.1.3")]  
-[assembly: AssemblyFileVersion("1.1.3")]
+[assembly: AssemblyVersion("1.1.4")]  
+[assembly: AssemblyFileVersion("1.1.4")]
