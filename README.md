@@ -49,6 +49,8 @@ Green colored arrow in the image below shows the application name which is alway
 - [x] ~~General bug fixes.~~
 - [x] ~~Customizable interface alongside the Ham5teak one.~~
 - [x] ~~Saving the last used custom presence for future uses.~~
+- [ ] Possibly a fully custom client? - Being debated
+- [ ] .Net 5 and .Net 6 versions - Currently in works
 
 **General Summary Of Changes:**
 ```diff
@@ -57,7 +59,10 @@ Green colored arrow in the image below shows the application name which is alway
 + Ability to add custom presence
 + Auto saving of custom presence
 + Design fixes
++ 32-bit and 64-bit support
++ .Net Framework 4.7.2
 - Unnecessary code
+- .Net Framework 4.6
 ```
 
 
