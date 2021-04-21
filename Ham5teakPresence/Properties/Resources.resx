@@ -117,4 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DiscordRPC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\DiscordRPC.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DiscordRPC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\DiscordRPC.pdb;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DiscordRPC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\DiscordRPC.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Ham5teakPresence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Ham5teakPresence.pdb;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ham5teakPresence_exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Ham5teakPresence.exe.config;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Newtonsoft_Json" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Newtonsoft.Json.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Newtonsoft_Json1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Newtonsoft.Json.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1254</value>
+  </data>
 </root>
