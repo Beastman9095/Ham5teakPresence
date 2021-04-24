@@ -154,5 +154,53 @@ namespace Ham5teakPresence.Properties {
                 this["b2t"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool yes {
+            get {
+                return ((bool)(this["yes"]));
+            }
+            set {
+                this["yes"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool no {
+            get {
+                return ((bool)(this["no"]));
+            }
+            set {
+                this["no"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool dark {
+            get {
+                return ((bool)(this["dark"]));
+            }
+            set {
+                this["dark"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool light {
+            get {
+                return ((bool)(this["light"]));
+            }
+            set {
+                this["light"] = value;
+            }
+        }
     }
 }
