@@ -60,7 +60,9 @@ Green colored arrow in the image below shows the application name which is alway
 + Auto saving of custom presence
 + Design fixes
 + 32-bit and 64-bit support
-+ .Net Framework 4.7.2
++ .Net Framework 4.8
++ Dark mode support
++ Minimize to tray feature
 - Unnecessary code
 - .Net Framework 4.6
 ```
