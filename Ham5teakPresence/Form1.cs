@@ -17,14 +17,8 @@ namespace Ham5teakPresence
         }
         private void notifyIcon1_Click(object sender, System.EventArgs e)
         {
-            System.Drawing.Size windowSize =
-                SystemInformation.PrimaryMonitorMaximizedWindowSize;
-            System.Drawing.Point menuPoint =
-                new System.Drawing.Point(windowSize.Width - 180,
-                windowSize.Height - 5);
-            menuPoint = this.PointToClient(menuPoint);
-
-            notifyIcon1.ContextMenuStrip.Show(this, menuPoint);
+            this.Activate();
+            this.Show();
         }
 
         private void FormIsClosing(object sender, FormClosingEventArgs e)
@@ -33,7 +27,6 @@ namespace Ham5teakPresence
             {
 
                 e.Cancel = true;
-                notifyIcon1.Visible = true;
                 this.Hide();
 
 

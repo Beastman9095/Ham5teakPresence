@@ -1,5 +1,6 @@
 ﻿using DiscordRPC;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Ham5teakPresence
@@ -32,6 +33,60 @@ namespace Ham5teakPresence
             button1text.Text = Properties.Settings.Default.b1t;
             button2url.Text = Properties.Settings.Default.b2u;
             button2text.Text = Properties.Settings.Default.b2t;
+
+        }
+
+
+        protected override void OnShown(EventArgs e)
+        {
+
+            if (Properties.Settings.Default.dark == true)
+            {
+
+                button1.TabStop = true;
+                button1.FlatStyle = FlatStyle.Flat;
+                button1.FlatAppearance.BorderSize = 0;
+                button2.TabStop = true;
+                button2.FlatStyle = FlatStyle.Flat;
+                button2.FlatAppearance.BorderSize = 0;
+                button3.TabStop = true;
+                button3.FlatStyle = FlatStyle.Flat;
+                button3.FlatAppearance.BorderSize = 0;
+                ApplyTheme(Color.FromArgb(34, 34, 34), Color.FromArgb(56, 56, 56), Color.FromArgb(242, 240, 219), Color.FromArgb(56, 56, 56));
+
+            }
+            else
+            {
+
+                ApplyTheme(Color.FromArgb(244, 244, 244), Color.FromArgb(225, 225, 225), Color.FromArgb(0, 0, 0), Color.FromArgb(255, 255, 255));
+
+            }
+
+        }
+
+        void ApplyTheme(Color back, Color btn, Color TextColor, Color menu)
+        {
+
+            this.BackColor = back;
+            label1.ForeColor = TextColor;
+            label3.ForeColor = TextColor;
+            label4.ForeColor = TextColor;
+            label5.ForeColor = TextColor;
+            label6.ForeColor = TextColor;
+            label7.ForeColor = TextColor;
+            label8.ForeColor = TextColor;
+            label9.ForeColor = TextColor;
+            label10.ForeColor = TextColor;
+            label11.ForeColor = TextColor;
+            label12.ForeColor = TextColor;
+            label13.ForeColor = TextColor;
+            label14.ForeColor = TextColor;
+            button1.BackColor = btn;
+            button1.ForeColor = TextColor;
+            button2.BackColor = btn;
+            button2.ForeColor = TextColor;
+            button3.BackColor = btn;
+            button3.ForeColor = TextColor;
 
         }
 

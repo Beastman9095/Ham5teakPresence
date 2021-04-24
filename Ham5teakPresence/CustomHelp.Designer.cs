@@ -78,6 +78,7 @@ namespace Ham5teakPresence
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.DodgerBlue;
             this.linkLabel1.Location = new System.Drawing.Point(63, 19);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(162, 13);
