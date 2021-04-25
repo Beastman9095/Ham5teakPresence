@@ -63,6 +63,7 @@ Green colored arrow in the image below shows the application name which is alway
 + .Net Framework 4.8
 + Dark mode support
 + Minimize to tray feature
++ Auto-Run on startup
 - Unnecessary code
 - .Net Framework 4.6
 ```
