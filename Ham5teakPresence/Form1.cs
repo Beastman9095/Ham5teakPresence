@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Microsoft.Win32;
 
 namespace Ham5teakPresence
 {
@@ -53,11 +54,28 @@ namespace Ham5teakPresence
             noToolStripMenuItem.Checked = Properties.Settings.Default.no;
             darkModeToolStripMenuItem.Checked = Properties.Settings.Default.dark;
             lightModeToolStripMenuItem.Checked = Properties.Settings.Default.light;
+            yesToolStripMenuItem1.Checked = Properties.Settings.Default.Enabled;
+            noToolStripMenuItem1.Checked = Properties.Settings.Default.Disabled;
 
         }
 
         protected override void OnShown(EventArgs e)
         {
+
+            if (Properties.Settings.Default.Enabled == true)
+            {
+
+
+                Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                key.SetValue("Ham5teakPresence", Application.ExecutablePath);
+
+            }
+            else if(Properties.Settings.Default.Disabled == true)
+            {
+
+                Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                key.DeleteValue("Ham5teakPresence", false);
+            }
 
             if (Properties.Settings.Default.dark == true)
             {
@@ -338,6 +356,8 @@ namespace Ham5teakPresence
             noToolStripMenuItem.Checked = Properties.Settings.Default.no;
             darkModeToolStripMenuItem.Checked = Properties.Settings.Default.dark;
             lightModeToolStripMenuItem.Checked = Properties.Settings.Default.light;
+            yesToolStripMenuItem1.Checked = Properties.Settings.Default.Enabled;
+            noToolStripMenuItem1.Checked = Properties.Settings.Default.Disabled;
 
         }
 
@@ -349,6 +369,31 @@ namespace Ham5teakPresence
         private void viewGuideToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/Beastman9095/Ham5teakPresence/wiki/Guide-To-Discord-Rich-Presences#steps");
+        }
+
+        private void noToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            noToolStripMenuItem1.Checked = true;
+            yesToolStripMenuItem1.Checked = false;
+            Properties.Settings.Default.Enabled = false;
+            Properties.Settings.Default.Disabled = true;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Reload();
+            Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+            key.DeleteValue("Ham5teakPresence", false);
+
+        }
+
+        private void yesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            noToolStripMenuItem1.Checked = false;
+            yesToolStripMenuItem1.Checked = true;
+            Properties.Settings.Default.Disabled = false;
+            Properties.Settings.Default.Enabled = true;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Reload();
+            Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+            key.SetValue("Ham5teakPresence", Application.ExecutablePath);
         }
     }
 }

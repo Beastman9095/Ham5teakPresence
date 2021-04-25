@@ -43,6 +43,9 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoStartOnStartupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.noToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -144,7 +147,8 @@
             // 
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.themeToolStripMenuItem1,
-            this.minimizeToTrayOnCloseToolStripMenuItem1});
+            this.minimizeToTrayOnCloseToolStripMenuItem1,
+            this.autoStartOnStartupToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
@@ -196,7 +200,7 @@
             this.yesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.A)));
             this.yesToolStripMenuItem.ShowShortcutKeys = false;
-            this.yesToolStripMenuItem.Size = new System.Drawing.Size(84, 22);
+            this.yesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.yesToolStripMenuItem.Text = "Yes";
             this.yesToolStripMenuItem.Click += new System.EventHandler(this.yesToolStripMenuItem_Click);
             // 
@@ -208,7 +212,7 @@
             this.noToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.B)));
             this.noToolStripMenuItem.ShowShortcutKeys = false;
-            this.noToolStripMenuItem.Size = new System.Drawing.Size(84, 22);
+            this.noToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.noToolStripMenuItem.Text = "No";
             this.noToolStripMenuItem.Click += new System.EventHandler(this.noToolStripMenuItem_Click);
             // 
@@ -226,7 +230,7 @@
             // 
             this.viewGuideToolStripMenuItem.Name = "viewGuideToolStripMenuItem";
             this.viewGuideToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.viewGuideToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewGuideToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.viewGuideToolStripMenuItem.Text = "View Guide";
             this.viewGuideToolStripMenuItem.Click += new System.EventHandler(this.viewGuideToolStripMenuItem_Click);
             // 
@@ -259,6 +263,29 @@
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            // 
+            // autoStartOnStartupToolStripMenuItem
+            // 
+            this.autoStartOnStartupToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yesToolStripMenuItem1,
+            this.noToolStripMenuItem1});
+            this.autoStartOnStartupToolStripMenuItem.Name = "autoStartOnStartupToolStripMenuItem";
+            this.autoStartOnStartupToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.autoStartOnStartupToolStripMenuItem.Text = "Auto-Start On Startup";
+            // 
+            // yesToolStripMenuItem1
+            // 
+            this.yesToolStripMenuItem1.Name = "yesToolStripMenuItem1";
+            this.yesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.yesToolStripMenuItem1.Text = "Enabled";
+            this.yesToolStripMenuItem1.Click += new System.EventHandler(this.yesToolStripMenuItem1_Click);
+            // 
+            // noToolStripMenuItem1
+            // 
+            this.noToolStripMenuItem1.Name = "noToolStripMenuItem1";
+            this.noToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.noToolStripMenuItem1.Text = "Disabled";
+            this.noToolStripMenuItem1.Click += new System.EventHandler(this.noToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -312,6 +339,9 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem autoStartOnStartupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem noToolStripMenuItem1;
     }
 }
 
